@@ -1,0 +1,411 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+    
+body{
+    font-family:"Times New Roman", Times, serif;
+    background-repeat: no-repeat;
+    background-image: url('./images/Profback.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/* Scroll back to top button */
+.gotop{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(72, 72, 72);
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+} 
+
+h1{
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-decoration-line: underline;
+    text-underline-offset: 15px;
+    position: absolute;
+    top: 10%;
+    left: 39%;
+}
+
+/* Logo's */
+.logo{
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#logo{
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+/* Navigation bar */
+nav{
+    background: rgba(192, 191, 191, 0.805);
+    height: 60px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+/* each button movement */
+nav ul li{
+    display: inline-block;
+    line-height: 60px; 
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #ffffff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+/* About Me Card */
+.pcontainer{
+    width: 80%;
+    margin: 85px auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.pcards{
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: .8rem;
+    border: 0.1rem solid black;
+    height: 390px;
+}
+
+.propic{
+    margin: 4px auto;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 0.1rem solid black;
+    background-color: grey;
+}
+
+
+.pcards .pimg{
+    background-image: url('./images/Profile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pcontent{
+    padding: 10px 10px;
+    margin: 5px -5px;
+    text-align: justify;
+}
+
+.pcontent h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pcontent h3{
+    text-align: center;
+}
+
+.pcontent p{
+    margin: 10px 0px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Portfolio Cards for my project*/
+.container{
+    width: 55%;
+    padding: 10px 10px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 70px;
+}
+
+.cards{
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: .8rem;
+    border: 0.1rem solid black;
+    margin-bottom: 20px;
+}
+
+.image-section{
+    margin: 30px;
+    height: 160px;
+    background-color: grey;
+}
+
+
+.cards .img{
+    background-image: url('./images/Projpic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .content{
+    display: flex;
+    align-items: center;
+}
+
+
+.content{
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+
+.content h2{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.content p{
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+.content .button{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0.1rem solid black;
+    background: rgb(112, 112, 113);
+    color: rgb(255, 255, 255);
+    border-radius: .8rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px;
+}
+
+.content .button:hover{
+    background-color: rgb(188, 193, 255);
+    color: rgb(60, 60, 60);
+}  
+
+/* Project Posts = Artworks and Games*/
+/* Gallery */
+h2{
+    text-align: center;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    top: 10%;
+}
+
+p{
+    text-align: center;
+    top: 10%;
+}
+
+#img-w{
+    margin: 25px 30px;
+    justify-items: center;
+    height:430px;
+    padding: 0px 0px;
+    border: 1px solid black;
+    margin-left: 30px;
+}
+
+.back-btn2{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0.1rem solid black;
+    background: rgb(112, 112, 113);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 27px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.back-btn2:hover{
+    background-color: rgb(188, 193, 255);
+    color: rgb(0, 0, 0);
+} 
+
+/* footer design */
+footer{
+    background-color: rgb(255, 255, 255);
+}
+
+.footerbottom{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p{
+  color: rgb(0, 0, 0);
+}
+
+.designer{
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0px 5px;
+}
+
+/* For sizing down the screen- media queries */
+@media (max-width: 900px){
+    .logo{
+        font-size: 30px;
+        padding-left: 60px;
+    }
+
+    #logo{
+        position: absolute;
+        width: 60px;
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .pcontainer{
+        width: 80%;
+        margin: 85px auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .pcontent{
+        display: block;
+        align-items: center;
+        width: 750px;
+    }
+
+    .pcontent p{
+        margin: 5px 0px;
+        font-size: small;
+    }
+
+    .pcontent h2{
+        font-size: small;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .pcontent h3{
+        text-align: center;
+        font-size: small;
+    }
+
+
+    .card .content{
+        display: flex;
+        align-items: center;
+        width: 300px;
+    }
+
+    .cards .img{
+        margin: 50px 100px;
+    }
+}
+
+@media (max-width: 850px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        top: 60px;
+        left: -120%;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        padding: 30px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    .pcontainer{
+        display: flex;
+        align-items: center;
+        width: 150px;
+    }
+
+    .card .content{
+        display: flex;
+        align-items: center;
+        width: 200px;
+    }
+
+    a:hover,a.active{
+        background: none;
+        color: rgb(198, 0, 248);
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+}

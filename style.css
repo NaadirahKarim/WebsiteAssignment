@@ -1,0 +1,222 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+    
+body{
+    font-family:"Times New Roman", Times, serif;
+    background-size: 100% 100%;
+    background-image: url('./images/HomeBack.jpg');
+    background-repeat: no-repeat;
+    width: 100%; 
+}
+
+/* Scroll back to top button */
+.gotop{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(72, 72, 72);
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+} 
+
+/* Logo's */
+.logo{
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#logo{
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+/* Navigation bar */
+nav{
+    background: rgba(192, 191, 191, 0.805);
+    height: 60px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+/* each button movement */
+nav ul li{
+    display: inline-block;
+    line-height: 60px; 
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #ffffff;
+    transition: .5s;
+}
+
+/* For the Burger Button */
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* Text for homepage */
+.container{
+    width: 85%;
+    margin: 95px auto;
+    display: block;
+}
+
+.content{
+    padding: 120px 10px;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 4em;
+    font-family: 'Dancing Script', cursive;
+    margin: 20px 0px;
+}
+
+.content h2{
+    font-size: 1.5em;
+    margin: 20px 0px;
+}
+
+/* More About Me button */
+.content .About-btn{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0.1rem solid black;
+    background: rgb(112, 112, 113);
+    color: rgb(255, 255, 255);
+    border-radius: .8rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.content .About-btn:hover{
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+} 
+
+/* footer design */
+footer{
+    background-color: rgb(255, 255, 255);
+}
+
+.footerbottom{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p{
+  color: rgb(0, 0, 0);
+}
+
+.designer{
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: -20px 5px;
+}
+
+/* For sizing down the screen- media queries */
+@media (max-width: 900px){
+
+    .logo{
+        font-size: 30px;
+        padding-left: 60px;
+    }
+
+    #logo{
+        position: absolute;
+        width: 60px;
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .content{
+        text-align: center;
+        justify-items: center;
+    }
+}
+
+
+@media (max-width: 850px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        top: 60px;
+        left: -120%;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        padding: 30px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(198, 0, 248);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+

@@ -1,0 +1,358 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+    
+body{
+    font-family:"Times New Roman", Times, serif;
+    background-repeat: no-repeat;
+    background-image: url('./images/Blogback.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/* Scroll back to top button */
+.gotop{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(72, 72, 72);
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50%;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+} 
+
+h1{
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-decoration-line: underline;
+    text-underline-offset: 15px;
+    position: absolute;
+    top: 10%;
+    left: 48%;
+}
+
+/* Logo's */
+.logo{
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#logo{
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+/* Navigation bar */
+nav{
+    background: rgba(192, 191, 191, 0.805);
+    height: 60px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+/* each button movement */
+nav ul li{
+    display: inline-block;
+    line-height: 60px; 
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #ffffff;
+    transition: .5s;
+}
+
+/* For the Burger Button */
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* Blog Cards for blog page (overview) */ 
+#blogcontainer{
+    padding: 5px;
+}
+
+#blogcontainer .container{
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+
+#blogcontainer .blog-post{
+    width: 94.5%;
+    max-width: 1504px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: #dbf4ff21;
+    box-shadow: 0 22.4px 128px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+#blogcontainer .blog-post .blog-img {
+    min-width: 160px;
+    max-width: 500px;
+    height: 160px;
+}
+
+#blogcontainer .blog-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    float: left;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: block;
+    margin-left: -10px;
+}
+
+#blogcontainer .blog-post .blog-date span {
+    display: block;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 30px 0 8px;
+}
+
+#blogcontainer .blog-post .blog-title {
+    font-size: 17px;
+    margin: 0 0 4.8px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#blogcontainer .blog-post .blog-text {
+    font-size: 15px;
+    color: #272727;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+#blogcontainer .blog-post .blog-btn{
+    margin-bottom: 10px ;
+    padding: 10px 9px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0.1rem solid black;
+    background: rgb(112, 112, 113);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+#blogcontainer .blog-info .blog-btn:hover{
+    background-color: rgb(187, 222, 255);
+    color: rgb(138, 138, 138);
+    border: 0.1rem solid black;
+} 
+
+
+/* blog post section with back button */
+#blog-container{
+    background-image: url('./images/Postback.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+#blog-container .post h2{
+    text-align: center;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    top: 10%;
+}
+
+#blog-container .post p{
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+#blog-container .blogpost{
+    width: 60%;
+    margin: 0px auto;
+}
+#blog-container .back-btn{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0.1rem solid black;
+    background: rgb(112, 112, 113);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 27px;
+    margin-bottom: 20px;
+}
+
+#blog-container .back-btn:hover{
+    background-color: rgb(187, 222, 255);
+    color: rgb(0, 0, 0);
+} 
+
+#blog-container .designb{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0.1rem solid black;
+    background: rgb(112, 112, 113);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 27px;
+    margin-bottom: 20px;
+    top: 100%;
+}
+
+#blog-container .designb:hover{
+    background-color: rgb(254, 202, 255);
+    color: rgb(0, 0, 0);
+} 
+
+/* footer design */
+footer{
+    background-color: rgb(255, 255, 255);
+    margin-top: 70px;
+}
+
+
+.footerbottom{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p{
+  color: rgb(0, 0, 0);
+}
+
+.designer{
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0px 5px;
+}
+
+/* For sizing down the screen- media queries */
+@media (max-width: 900px){
+    .logo{
+        font-size: 30px;
+        padding-left: 60px;
+    }
+
+    #logo{
+        position: absolute;
+        width: 60px;
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #blogcontainer .blog-post{
+        width: 94.5%;
+        max-width: 1504px;
+        max-height: 400px;
+        padding: 20px;
+        background-color: #dbf4ff21;
+        box-shadow: 0 22.4px 128px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        margin: 40px;
+    }
+
+    #blogcontainer .blog-post .blog-btn{
+        margin-bottom: 0px ;
+        padding: 10px 9px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 0.1rem solid black;
+        background: rgb(112, 112, 113);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        cursor: pointer;
+        float: right;
+    }
+}
+
+@media (max-width: 850px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        top: 60px;
+        left: -120%;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        padding: 30px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(198, 0, 248);
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
