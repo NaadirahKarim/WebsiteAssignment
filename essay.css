@@ -111,32 +111,40 @@ a.active,a:hover{
 }
 
 /* Essay Placeholder */
-.container{
-    width: 95%;
-    margin: 85px auto;
-    display: block;
-}
-
 .card{
+    width: 96%;
+    margin: 75px auto 20px 30px;
+    display: inline-block;
     background-color: #fff;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     border: 0.1rem solid black;
-    height: 530px;
 }
 
 .content{
     padding: 10px 10px;
-    text-align: center;
+
 }
 
 .content h2{
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .content p{
-    margin: 10px 0px;
+    margin: 0px 0px;
     font-size: 16px;
+    text-align:justify;
+}
+
+.content pre{
+    margin: 0px 0px;
+    font-size: 16px;
+    text-align:justify;
+}
+.article {
+    font-size: 16px;
+    text-align: left;
 }
 
 /* footer design */
