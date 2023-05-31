@@ -117,14 +117,16 @@ a.active,a:hover{
 }
 
 .content h1{
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Dancing Script', cursive;
     margin: 20px 0px;
+    text-align: center;
 }
 
 .content h2{
     font-size: 1.5em;
     margin: 20px 0px;
+    text-align: center;
 }
 
 /* More About Me button */
@@ -139,6 +141,7 @@ a.active,a:hover{
     cursor: pointer;
     display: inline-block;
     padding: 10px 20px;
+    justify-content: center;
 }
 
 .content .About-btn:hover{

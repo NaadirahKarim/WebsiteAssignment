@@ -41,9 +41,7 @@ h1{
     text-align: center;
     text-decoration-line: underline;
     text-underline-offset: 15px;
-    position: absolute;
-    top: 8%;
-    left: 48%;
+    /* position: absolute; */
 }
 
 /* Logo's */
@@ -113,7 +111,7 @@ a.active,a:hover{
 /* Essay Placeholder */
 #essay .card{
     width: 96%;
-    margin: 75px auto 40px 30px;
+    margin: 10px auto 40px 30px;
     display: inline-block;
     background-color: #fff;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
@@ -125,13 +123,13 @@ a.active,a:hover{
 }
 
 #essay .content h2{
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
 }
 
 #essay .content p{
-    font-size: 16px;
+    font-size: 19px;
     text-align:justify;
 }
 

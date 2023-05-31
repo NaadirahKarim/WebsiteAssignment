@@ -27,7 +27,6 @@ body{
     bottom: 40px;
     right: 50px;
     border-radius: 50%;
-
     text-decoration: none;
     text-align: center;
     line-height: 50px;
@@ -41,9 +40,7 @@ h1{
     text-align: center;
     text-decoration-line: underline;
     text-underline-offset: 15px;
-    position: absolute;
-    top: 8%;
-    left: 39%;
+    /* position: absolute; */
 }
 
 /* Logo's */
@@ -113,7 +110,7 @@ a.active,a:hover{
 /* About Me Card */
 .pcontainer{
     width: 80%;
-    margin: 85px auto;
+    margin: 50px auto;
     display: block;
     justify-content: center;
     align-items: center;
@@ -147,7 +144,7 @@ a.active,a:hover{
 
 .pcontent{
     padding: 10px 10px;
-    margin: 5px -5px;
+    margin: 0px -5px;
     text-align: justify;
 }
 
