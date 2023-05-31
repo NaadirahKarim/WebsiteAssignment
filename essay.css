@@ -31,7 +31,7 @@ body{
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    color: white;
+    color: rgba(192, 191, 191, 0.805);
     font-size: 22px;
 } 
 
@@ -111,26 +111,26 @@ a.active,a:hover{
 }
 
 /* Essay Placeholder */
-.card{
+#essay .card{
     width: 96%;
-    margin: 75px auto 20px 30px;
+    margin: 75px auto 40px 30px;
     display: inline-block;
     background-color: #fff;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     border: 0.1rem solid black;
 }
 
-.content{
-    padding: 10px 10px;
+#essay .content{
+    padding: 10px 15px;
 }
 
-.content h2{
+#essay .content h2{
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.content p{
+#essay .content p{
     font-size: 16px;
     text-align:justify;
 }
