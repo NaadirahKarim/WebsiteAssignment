@@ -27,7 +27,6 @@ body{
     bottom: 40px;
     right: 50px;
     border-radius: 50%;
-
     text-decoration: none;
     text-align: center;
     line-height: 50px;
@@ -41,20 +40,25 @@ h1{
     text-align: center;
     text-decoration-line: underline;
     text-underline-offset: 15px;
-    /* position: absolute; */
+    margin-top: 80px;
+}
+
+.header{
+    box-sizing: border-box;
 }
 
 /* Logo's */
 .logo{
-    position: absolute;
+    position: fixed;
     color: black;
     font-size: 30px;
     line-height: 60px;
-    margin: 0 10px;
+    margin: 0 80px;
     font-weight: bold;
 }
 
 #logo{
+    position: fixed;
     margin-top: 8px;
     margin-left: 10px;
     width: 60px;
@@ -66,6 +70,9 @@ nav{
     background: rgba(192, 191, 191, 0.805);
     height: 60px;
     width: 100%;
+    border-bottom: 1px solid rgb(164, 164, 164);
+    position: fixed;
+    margin-top: -80px;
 }
 
 nav ul{
@@ -86,6 +93,7 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 a.active,a:hover{
@@ -109,17 +117,17 @@ a.active,a:hover{
 }
 
 /* Essay Placeholder */
-#essay .card{
+#essay .essayblock{
     width: 96%;
     margin: 10px auto 40px 30px;
-    display: inline-block;
+    display:inline-block;
     background-color: #fff;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     border: 0.1rem solid black;
 }
 
 #essay .content{
-    padding: 10px 15px;
+    padding: 20px 15px;
 }
 
 #essay .content h2{
@@ -158,11 +166,10 @@ footer{
 @media (max-width: 900px){
     .logo{
         font-size: 30px;
-        padding-left: 60px;
     }
 
     #logo{
-        position: absolute;
+        position: fixed;
         width: 60px;
         height: 40px;
     }

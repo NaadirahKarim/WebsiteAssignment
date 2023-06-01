@@ -41,20 +41,25 @@ h1{
     text-align: center;
     text-decoration-line: underline;
     text-underline-offset: 15px;
-    /* position: absolute; */
-} 
+    margin-top: 80px;
+}
+
+.header{
+    box-sizing: border-box;
+}
 
 /* Logo's */
 .logo{
-    position: absolute;
+    position: fixed;
     color: black;
     font-size: 30px;
     line-height: 60px;
-    margin: 0 10px;
+    margin: 0 80px;
     font-weight: bold;
 }
 
 #logo{
+    position: fixed;
     margin-top: 8px;
     margin-left: 10px;
     width: 60px;
@@ -67,6 +72,9 @@ nav{
     height: 60px;
     width: 100%;
     max-width: 200%;
+    border-bottom: 1px solid rgb(164, 164, 164);
+    position: fixed;
+    margin-top: 0px;
 }
 
 
@@ -88,6 +96,7 @@ nav ul li a{
     padding: 7px 15px;
     border-radius: 3px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 a.active,a:hover{
@@ -113,7 +122,7 @@ a.active,a:hover{
 /* Design Cards for design page (overview) */ 
 .container{
     width: 85%;
-    margin: 100px auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;
@@ -124,7 +133,7 @@ a.active,a:hover{
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     border-radius: .8rem;
     border: 0.1rem solid black;
-    margin-bottom: -60px;
+    margin-bottom: -70px;
 }
 
 .image-section{
@@ -154,7 +163,7 @@ a.active,a:hover{
 
 .content p{
     margin: 15px 0px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .content .button{
@@ -189,6 +198,7 @@ a.active,a:hover{
     text-align: center;
     text-decoration-line: underline;
     text-underline-offset: 5px;
+    margin-top: 50px;
 }
 
 #d-container .post h2{
@@ -381,11 +391,10 @@ footer{
 @media (max-width: 900px){
     .logo{
         font-size: 30px;
-        padding-left: 60px;
     }
 
     #logo{
-        position: absolute;
+        position: fixed;
         width: 60px;
         height: 40px;
     }

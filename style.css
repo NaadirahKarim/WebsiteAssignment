@@ -31,25 +31,26 @@ body{
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    color: white;
+    color: rgba(192, 191, 191, 0.805);
     font-size: 22px;
 } 
 
 .header{
-    position: sticky;
+    box-sizing: border-box;
 }
 
 /* Logo's */
 .logo{
-    position: absolute;
+    position: fixed;
     color: black;
     font-size: 30px;
     line-height: 60px;
-    margin: 0 10px;
+    margin: 0 80px;
     font-weight: bold;
 }
 
 #logo{
+    position: fixed;
     margin-top: 8px;
     margin-left: 10px;
     width: 60px;
@@ -61,7 +62,9 @@ nav{
     background: rgba(192, 191, 191, 0.805);
     height: 60px;
     width: 100%;
-    position: sticky;
+    border-bottom: 1px solid rgb(164, 164, 164);
+    position: fixed;
+    margin-top: -95px;
 }
 
 nav ul{
@@ -82,6 +85,7 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 a.active,a:hover{
@@ -175,11 +179,10 @@ footer{
 
     .logo{
         font-size: 30px;
-        padding-left: 60px;
     }
 
     #logo{
-        position: absolute;
+        position: fixed;
         width: 60px;
         height: 40px;
     }
