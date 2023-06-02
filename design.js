@@ -1,6 +1,3 @@
-//Search Bar
-
-
 
 //Gallery for Design Section - Wireframes
 const gallery = document.querySelectorAll(".gallery .image"),
