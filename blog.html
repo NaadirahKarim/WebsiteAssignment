@@ -40,11 +40,10 @@
 
     <!-- Search Bar -->
     <section class="search-input-wrapper">
-        <section class="search-input">
-            <label for="search">Search Blogs</label>
+        <form action="https://www.google.com/search" method="get" class="search-input">
             <input type="text" placeholder="Search"/>
             <i class="fas fa-times"></i>
-        </section>
+        </form>
     </section>    
     <section class="search-icon">
         <i class="fas fa-search"></i>
@@ -55,6 +54,7 @@
         <a class="gotop" href="#"> <i class="fa-solid fa-arrow-up"></i> </a>
 
         <!-- Blog Post Overview Cards -->
+    <section class="hidden">
         <section id="blogcontainer"> 
             <section class="container">
                 <!-- Week 1 blog -->
@@ -157,7 +157,7 @@
                             <span>26 Apr 2023 at 9:23AM</span>
                         </section>
                         <h2 class="blog-title"> Week 8 - The World in www / Semantic Markup</h2>
-                        <p class="blog-text">This week I have started developing with the main aspects of my website which is mainly my Design section. Throughout the week I had to change up my colour palette due to changing my aesthetic. While planning my design section I used the “IxD UI UX Process” to answer the questions being asked. The reading reflections emphasised user experience the most and how UX is not just a function but can be seen all around us with mundane activities.</p>
+                        <p class="blog-text"></p>
                         <a href="./blogpost6.html" class="blog-btn">READ MORE</a>
                     </section>
                 </section>
@@ -252,10 +252,13 @@
                     </section>
                 </section> -->
             </section>
-        </section>        
+        </section>             
+    </section>
+       
     </main>
 
     <script src="./all.js"></script>
+    <script src="./searchbar.js"></script>
     <!-- footer -->
     <footer>
         <section class="footerbottom">
