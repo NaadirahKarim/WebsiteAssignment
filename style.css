@@ -185,10 +185,11 @@ footer{
 }
 
 /* For sizing down the screen- media queries */
-@media (max-width: 900px){
+@media (max-width: 1500px){
 
     .logo{
-        font-size: 30px;
+        position: fixed;
+        font-size: 40px;
     }
 
     #logo{
@@ -197,18 +198,157 @@ footer{
         height: 40px;
     }
 
+    nav{
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        margin-top: -20px;
+    }
+
     nav ul li a{
         font-size: 20px;
         font-weight: bold;
     }
 
+    .profileimg img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .container{
+        width: 100%;
+        margin: 20px auto 30px;
+    }
+    
     .content{
-        text-align: center;
-        justify-items: center;
+        padding:  70px 10px;
+
+    }
+    
+    .content h1{
+        font-size: 3em;
+        margin: 10px 0px;
+    }
+    
+    .content h2{
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+
+    .content .About-btn{
+        font-size: 15px;
+        padding: 10px 20px;
     }
 }
 
+@media (max-width: 800px){
 
+    .logo{
+        position: fixed;
+        font-size: 25px;
+    }
+
+    #logo{
+        position: fixed;
+        width: 60px;
+        height: 40px;
+    }
+    nav{
+
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        margin-top: -20px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .profileimg img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .container{
+        width: 100%;
+        margin: 20px auto 30px;
+    }
+    
+    .content{
+        padding: 100px 10px;
+
+    }
+    
+    .content h1{
+        font-size: 2em;
+        margin: 20px 0px;
+    }
+    
+    .content h2{
+        font-size: 1em;
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .logo{
+        position: fixed;
+        font-size: 20px;
+    }
+
+    #logo{
+        position: fixed;
+        width: 55px;
+        height: 40px;
+    }
+    nav{
+
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        margin-top: -20px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .profileimg img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .container{
+        width: 100%;
+        margin: 20px auto 30px;
+    }
+    
+    .content{
+        padding: 120px 10px;
+
+    }
+    
+    .content h1{
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+    
+    .content h2{
+        font-size: 1em;
+        margin: 20px 0px;
+    }
+
+    .content .About-btn{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
+
+/* slider bar */
 @media (max-width: 850px){
     .checkbtn{
         display: block;

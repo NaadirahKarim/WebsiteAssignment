@@ -151,7 +151,7 @@ a.active,a:hover{
     font-size: 14px;
     text-transform: uppercase;
     margin-left: 540px;
-
+    margin: 5px;
 }
 
 #essay .essaycon p{
@@ -196,7 +196,7 @@ footer{
 }
 
 /* For sizing down the screen- media queries */
-@media (max-width: 900px){
+@media (max-width: 1500px){
     .logo{
         font-size: 30px;
     }
@@ -211,6 +211,118 @@ footer{
         font-size: 20px;
         font-weight: bold;
     }
+
+    #essay .essaycon h2{
+        font-size: 25px;
+        text-align: center;
+        margin: 17px;
+    }
+    #essay .essaycon h3{
+        margin: 5px;
+        font-size: 20px;
+        margin-left: 410px;
+    }
+    
+    #essay .essaycon p{
+        font-size: 23px;
+        text-align:justify;
+        margin: 10px;
+    }
+
+    #essay img{
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px){
+    .logo{
+        font-size: 30px;
+    }
+
+    #logo{
+        position: fixed;
+        width: 60px;
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #essay .essaycon h2{
+        font-size: 18px;
+        margin: 15px;
+    }
+    #essay .essaycon h3{
+        margin: 5px;
+        font-size: 16px;
+        margin-left: 150px;
+    }
+    
+    #essay .essaycon p{
+        font-size: 16px;
+        text-align:justify;
+        margin: 10px;
+    }
+
+    #essay img{
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .logo{
+        font-size: 30px;
+    }
+
+    #logo{
+        position: fixed;
+        width: 60px;
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    h1{
+        margin-left: 270px;
+    }
+    #essay{
+        padding: 10px;
+        display: inline-block;
+    }
+
+    #essay .essaycon h2{
+        font-size: 18px;
+        margin: 10px;
+    }
+    #essay .essaycon h3{
+        margin: 5px;
+        font-size: 16px;
+        margin-left: 150px;
+    }
+    
+    #essay .essaycon p{
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    #essay img{
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+        padding: 10px;
+    }
+
 }
 
 @media (max-width: 850px){
@@ -229,7 +341,38 @@ footer{
     }
     nav ul li{
         display: block;
-        padding: 30px 0;
+        padding: 25px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(198, 0, 248);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media (max-width: 400px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        background-color: white;
+        top: 60px;
+        left: -120%;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        padding: 30px 0px;
+        margin-top: 60px;
     }
     nav ul li a{
         font-size: 20px;

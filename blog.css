@@ -348,20 +348,20 @@ a.active,a:hover{
 #blog-container .post h2{
     font-size: 20px;
     text-decoration-line: underline;
-    text-underline-offset: 3px
+    text-underline-offset: 4px
 }
 
 #blog-container .post h3{
-    font-size: 19px;
+    font-size: 18px;
+    margin: 5px;
 }
 
 
 #blog-container .post p{
-    text-decoration: none;
-    font-size: 19px;
+    font-size: 18px;
     text-align: justify;
     padding-bottom: 30px;
-    font-size: 30px;
+    margin: 5px;
 }
 
 #blog-container .blogpost{
@@ -391,7 +391,7 @@ a.active,a:hover{
 
 #blog-container .back-btn2{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
     border: 0.1rem solid black;
     background: rgb(112, 112, 113);
