@@ -118,37 +118,60 @@ a.active,a:hover{
 
 /* Essay Placeholder */
 #essay{
-
     padding: 10px;
     display: flex;
 }
 
+#essay article{
+    margin: 30px;
+}
+
 #essay .essayblock{
-    width: 96%;
-    margin: 10px auto 40px 30px;
+    width: 100%;
+    margin: 10px auto 20px auto;
     background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     border: 0.1rem solid black;
     display: inline-block;
 }
 
-#essay .content{
+#essay .essaycon{
     padding: 20px 15px;
 }
 
-#essay .content h2{
+#essay .essaycon h2{
     font-size: 20px;
     text-transform: uppercase;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
     text-align: center;
+    margin: 15px;
+}
+#essay .essaycon h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 540px;
+
 }
 
-#essay .content p{
+#essay .essaycon p{
     font-size: 19px;
     text-align:justify;
+    margin: 10px;
+}
+
+#essay .eimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #essay img{
-    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
 }
 
 /* footer design */
