@@ -235,6 +235,7 @@ a.active,a:hover{
 }  
 
 /* Project Posts = Artworks and Games*/
+/* art page */
 .art{
     display: flex;
     gap: 40px;
@@ -256,6 +257,69 @@ a.active,a:hover{
     margin: 280px 0px auto -250px;
 }
 
+/* games page */
+#gamecontainer{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#gamecontainer a{
+    display: inline-block;
+    border: 5px solid black;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#gamecontainer h2{
+    font-family:"Times New Roman", Times, serif;  
+    text-align: center;  
+    margin: 20px;
+    font-size: 22px;
+    text-decoration-line: underline;
+    text-underline-offset: 5px
+}
+
+#gamecontainer h3{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#gamecontainer p{
+    font-size: 18px;
+    text-align: start;
+    padding: 10px 50px 10px 50px;
+}
+
+#gamecontainer .game .imgmain{
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    display: block;
+    margin-left: 550px;
+} 
+
+#gamecontainer .back-btn2{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0.1rem solid black;
+    background: rgb(112, 112, 113);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 17px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.back-btn2:hover{
+    background-color: rgb(188, 193, 255);
+    color: rgb(0, 0, 0);
+} 
 
 .back-btn2{
     text-decoration: none;
@@ -336,7 +400,7 @@ footer{
     
     .pcontent h3{
         text-align: center;
-        font-size: 20;
+        font-size: 20px;
     }
 
     .pcontent p{
@@ -371,7 +435,44 @@ footer{
     }
 
     /* games page */
-
+    #gamecontainer{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    #gamecontainer a{
+        display: inline-block;
+        border: 5px solid black;
+        margin-left: 50px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    #gamecontainer h2{
+        margin: 25px;
+        font-size: 30px;
+        text-decoration-line: underline;
+        text-underline-offset: 5px
+    }
+    
+    #gamecontainer h3{
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    #gamecontainer p{
+        font-size: 22px;
+    }
+    
+    #gamecontainer .game .imgmain{
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        display: block;
+        margin-left: 450px;
+    } 
 }
 
 @media (max-width: 800px){
@@ -456,6 +557,44 @@ footer{
     }
 
      /* games page */
+     #gamecontainer{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    #gamecontainer a{
+        display: inline-block;
+        border: 5px solid black;
+        margin-left: 50px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    #gamecontainer h2{
+        margin: 20px;
+        font-size: 25px;
+        text-decoration-line: underline;
+        text-underline-offset: 5px
+    }
+    
+    #gamecontainer h3{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    #gamecontainer p{
+        font-size: 18px;
+    }
+    
+    #gamecontainer .game .imgmain{
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+        display: block;
+        margin-left: 200px;
+    } 
 }
 
 @media (max-width: 400px){
@@ -552,6 +691,45 @@ footer{
     }
 
      /* games page */
+     #gamecontainer{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    #gamecontainer a{
+        display: inline-block;
+        border: 3px solid black;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    #gamecontainer h2{
+        margin: 20px;
+        font-size: 20px;
+        text-decoration-line: underline;
+        text-underline-offset: 5px
+    }
+    
+    #gamecontainer h3{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    #gamecontainer p{
+        font-size: 14px;
+    }
+    
+    #gamecontainer .game .imgmain{
+        width: 100%;
+        max-width: 250px;
+        height: 150px;
+        display: block;
+        margin-left: 35px;
+    } 
 }
 
 @media (max-width: 850px){
