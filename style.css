@@ -36,7 +36,9 @@ body{
 }  */
 
 .header{
-    box-sizing: border-box;
+    /* box-sizing: border-box;
+    margin-bottom: 100px; */
+    top: 50%;
 }
 
 /* Logo's */
