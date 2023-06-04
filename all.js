@@ -14,71 +14,76 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((element) => observer.observe (element));
 
 // DOM for navigations header
-// header element
-// const header = document.createElement('header');
 
-// nav element
+// Create the header element
+const header = document.createElement('header');
+
+// Create the nav element
 const nav = document.createElement('nav');
-nav.style.marginTop = '-657px';
+nav.style.marginTop = '-1500px';
+// Create the input element for the checkbox
 
-// input checkbox
-const checkboxInput = document.createElement('input');
-checkboxInput.type = 'checkbox';
-checkboxInput.id = 'check';
+const input = document.createElement('input');
+input.type = 'checkbox';
+input.id = 'check';
 
-// label checkbox
-const checkboxLabel = document.createElement('label');
-checkboxLabel.setAttribute('for', 'check');
-checkboxLabel.className = 'checkbtn';
+// Create the label element for the checkbox
+const label = document.createElement('label');
+label.htmlFor = 'check';
+label.classList.add('checkbtn');
 
-//  icon menu button
+// Create the icon element
 const icon = document.createElement('i');
-icon.className = 'fas fa-bars';
+icon.classList.add('fas', 'fa-bars');
 
-// icon checkbox label
-checkboxLabel.appendChild(icon);
+// Append the icon to the label
+label.appendChild(icon);
 
-// logo image
-const logoImage = document.createElement('img');
-logoImage.src = './images/Logo 2.png';
-logoImage.id = 'logo';
+// Create the logo image element
+const logoImg = document.createElement('img');
+logoImg.src = './images/Logo 2.png';
+logoImg.id = 'logo';
 
-// label logo
+// Create the label element for the logo
 const logoLabel = document.createElement('label');
-logoLabel.setAttribute('for', 'logo');
-logoLabel.className = 'logo';
+logoLabel.htmlFor = 'logo';
+logoLabel.classList.add('logo');
 logoLabel.textContent = 'Naadirah Karim.';
 
-
+// Create the unordered list element
 const ul = document.createElement('ul');
 
-// Create list item elements with anchor elements
-const liHome = document.createElement('li');
-liHome.innerHTML = `<a href="index.html" class="active">Home</a>`;
+// Create an array of menu items
+const menuItems = [
+  { text: 'Home', href: 'index.html', className: 'active' },
+  { text: 'My Profile', href: './profile.html' },
+  { text: 'Blogs', href: './blog.html' },
+  { text: 'Design', href: './design.html' },
+  { text: 'Essay', href: './essay.html' }
+];
 
-const liProfile = document.createElement('li');
-liProfile.innerHTML = `<a href="./profile.html">My Profile</a>`;
+// Create list items and anchor elements for each menu item
+const liElements = menuItems.map(menuItem => {
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+  a.href = menuItem.href;
+  a.textContent = menuItem.text;
+  if (menuItem.className) {
+    a.classList.add(menuItem.className);
+  }
+  li.appendChild(a);
+  return li;
+});
 
-const liBlog = document.createElement('li');
-liBlog.innerHTML = `<a href="./blog.html">Blogs</a>`;
+// Append the list items to the unordered list
+ul.append(...liElements);
 
-const liDesign = document.createElement('li');
-liDesign.innerHTML = `<a href="./design.html">Design</a>`;
-
-const liEssay = document.createElement('li');
-liEssay.innerHTML = `<a href="./essay.html">Essay</a>`;
-
-// Append list item elements to unordered list
-ul.innerHTML = liHome.outerHTML + liProfile.outerHTML + liBlog.outerHTML + liDesign.outerHTML + liEssay.outerHTML;
-
-// Append all elements to the DOM
-nav.innerHTML = checkboxInput.outerHTML + checkboxLabel.outerHTML + logoImage.outerHTML + logoLabel.outerHTML + ul.outerHTML;
-header.innerHTML = nav.outerHTML;
+// Append all the elements to the DOM
+nav.append(input, label, logoImg, logoLabel, ul);
+header.appendChild(nav);
 
 // Append the header to the document body
-document.body.innerHTML += header.outerHTML;
-
-
+document.body.appendChild(header);
 
 
 

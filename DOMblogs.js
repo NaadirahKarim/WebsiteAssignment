@@ -25,4 +25,5 @@ function fetchBlogPosts() {
 
 // Call the fetchBlogPosts function to populate the array
 fetchBlogPosts();
+
 console.log(blogPosts);
