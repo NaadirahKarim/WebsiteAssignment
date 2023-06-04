@@ -15,7 +15,7 @@ hiddenElements.forEach((element) => observer.observe (element));
 
 // DOM for navigations header
 // header element
-const header = document.createElement('header');
+// const header = document.createElement('header');
 
 // nav element
 const nav = document.createElement('nav');
