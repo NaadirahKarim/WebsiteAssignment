@@ -125,7 +125,7 @@ a.active,a:hover{
     color: black;
     float: right;
     line-height: 60px;
-    margin-right: 40px;
+    margin-right: 80px;
     cursor: pointer;
     display: none;
 }
@@ -228,7 +228,6 @@ a.active,a:hover{
 
 /* Blog Cards for blog page (overview) */ 
 
-
 #blogcontainer{
     padding: 5px;
     justify-content: center;
@@ -289,20 +288,20 @@ a.active,a:hover{
 #blogcontainer .blog-post .blog-date span {
     display: block;
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin: 30px 0 8px;
 }
 
-#blogcontainer .blog-post .blog-title {
-    font-size: 19px;
+#blogcontainer .blog-info  h2{
+    font-size: 20px;
     margin: 0 0 4.8px;
     text-transform: uppercase;
     color: #000000;
 }
 
-#blogcontainer .blog-post .blog-text {
-    font-size: 17px;
+#blogcontainer .blog-info p{
+    font-size: 18px;
     color: #272727;
     text-align: justify;
     padding-bottom: 10px;
@@ -452,7 +451,7 @@ footer{
 }
 
 /* For sizing down the screen- media queries */
-@media (max-width: 900px){
+@media (max-width: 1500px){
     .logo{
         font-size: 30px;
     }
@@ -468,30 +467,214 @@ footer{
         font-weight: bold;
     }
 
+    /* blog overview page */
     #blogcontainer .blog-post{
-        width: 94.5%;
-        max-width: 1504px;
-        max-height: 400px;
-        padding: 20px;
-        background-color: #dbf4ff21;
-        box-shadow: 0 22.4px 128px rgba(0, 0, 0, 0.2);
-        display: flex;
-        align-items: center;
-        border-radius: 10px;
-        margin: 40px;
+        width: 90%;
+        max-width: 1500px;
+        max-height: 250px;
+        margin: 40px 20px;
     }
 
     #blogcontainer .blog-post .blog-btn{
-        margin-bottom: 0px ;
-        padding: 10px 9px;
-        font-size: 15px;
+        padding: 12px 10px;
+        font-size: 17px;
+    }
+
+    #blogcontainer .blog-img img {
+        width: 100%;
+        height: 100%;
+        margin: -15px -5px;
+    }
+    
+    #blogcontainer .blog-post .blog-date span {
+        font-size: 20px;
+        margin: 30px 8px 8px;
+    }
+    
+    #blogcontainer .blog-info  h2{
+        font-size: 23px
+    }
+    
+    #blogcontainer .blog-info p{
+        font-size: 20px;
+    }
+
+    /* blog post */
+    #blog-container .blogpost{
+        width: 75%;
+        margin: 0px auto;
+    }
+
+    #blog-container .post h1{
+        font-size: 30px;
+    }
+    
+    #blog-container .post h2{
+        font-size: 25px;
+        text-decoration-line: underline;
+        text-underline-offset: 4px
+    }
+    
+    #blog-container .post h3{
+        font-size: 20px;
+    }
+    
+    
+    #blog-container .post p{
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 800px){
+    .logo{
+        font-size: 30px;
+    }
+
+    #logo{
+        position: fixed;
+        width: 60px;
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
         font-weight: bold;
-        border: 0.1rem solid black;
-        background: rgb(112, 112, 113);
-        color: rgb(255, 255, 255);
-        border-radius: 10px;
-        cursor: pointer;
-        float: right;
+    }
+
+    /* blog overview page */
+    #blogcontainer .blog-post{
+        width: 90%;
+        max-width: 1200px;
+        max-height: 270px;
+        margin: 40px 9px;
+    }
+
+    #blogcontainer .blog-post .blog-btn{
+        padding: 8px 9px;
+        font-size: 14px;
+    }
+
+    #blogcontainer .blog-img img {
+        width: 90%;
+        height: 90%;
+        margin: -15px -5px;
+    }
+    
+    #blogcontainer .blog-post .blog-date span {
+        font-size: 14px;
+        margin: 30px 8px 8px;
+    }
+    
+    #blogcontainer .blog-info  h2{
+        font-size: 16px
+    }
+    
+    #blogcontainer .blog-info p{
+        font-size: 14px;
+    }
+
+    .checkbtn{
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 400px){
+    .logo{
+        position: fixed;
+        font-size: 20px;
+    }
+
+    #logo{
+        position: fixed;
+        width: 60px;
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* blog overview page */
+    #blogcontainer .blog-post{
+        width: 95%;
+        max-width: 500px;
+        max-height: 500px;
+        margin: 40px 7px;
+    }
+
+    #blogcontainer .blog-post .blog-btn{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    #blogcontainer .blog-post .blog-img {
+        min-width: 100px;
+        max-width: 200px;
+        height: 200px;
+    }
+
+    #blogcontainer .blog-img img {
+        width: 100%;
+        height: 50%;
+        margin: -15px -10px;
+    }
+    
+    #blogcontainer .blog-post .blog-date span {
+        font-size: 12px;
+        margin: 30px 0px 8px;
+    }
+    
+    #blogcontainer .blog-info  h2{
+        font-size: 13px
+    }
+    
+    #blogcontainer .blog-info p{
+        font-size: 12px;
+    }
+
+    /* blog posts */
+    #blog-container .blogpost{
+        width: 70%;
+        margin: 0px auto;
+    }
+
+    #blog-container .post h1{
+        font-size: 20px;
+    }
+    
+    #blog-container .post h2{
+        font-size: 17px;
+        text-decoration-line: underline;
+        text-underline-offset: 4px
+    }
+    
+    #blog-container .post h3{
+        font-size: 15px;
+    }
+    
+    
+    #blog-container .post p{
+        font-size: 15px;
+    }
+
+    .checkbtn{
+        margin-right: 40px;
+    }
+
+    #blog-container .back-btn{
+        font-size: 15px;
+        padding: 7px 16px;
+    }
+
+    #blog-container .back-btn2{
+        font-size: 15px;
+        padding: 7px 16px;
+    }
+
+    #blog-container .designb{
+        font-size: 16px;
+        padding: 7px 12px;
     }
 }
 
@@ -526,4 +709,33 @@ footer{
     }
 }
 
+@media (max-width: 400px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 150vh;
+        background-color: white;
+        top: 60px;
+        left: -120%;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        padding: 30px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(198, 0, 248);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
 

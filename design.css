@@ -228,24 +228,25 @@ a.active,a:hover{
 
 /* Design Cards for design page (overview) */ 
 .container{
-    width: 85%;
-    margin: 50px auto;
+    width: 90%;
+    margin: 50px 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;
 }
 
+/* Appearnace */
 .hidden{
     opacity: 0;
     filter: blur(5px);
-    /* transform: translateX(-100%); */
+    transform: translateX(-100%);
     transition: all 1s;
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
-    /* transform: translateX(0); */
+    transform: translateX(0);
 }
 
 /* Design Overview Page Cards */
@@ -254,7 +255,7 @@ a.active,a:hover{
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     border-radius: .8rem;
     border: 0.1rem solid black;
-    margin-bottom: -70px;
+    margin-bottom: -60px;
 }
 
 .image-section{
@@ -333,7 +334,7 @@ a.active,a:hover{
 }
 
 #d-container .post p{
-    text-decoration: none;
+    font-size: 18px;
     text-align: justify;
     padding-bottom: 30px;
 }
@@ -366,20 +367,6 @@ a.active,a:hover{
     padding: 0px 0px;
 }
 
-
-.back-btn{
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-    border: 0.1rem solid black;
-    background: rgb(112, 112, 113);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-block;
-    padding: 7px 25px;
-    margin-bottom: 20px;
-}
 
 .back-btn{
     text-decoration: none;
@@ -601,8 +588,9 @@ footer{
 }
 
 /* For sizing down the screen- media queries */
-@media (max-width: 900px){
+@media (max-width: 1500px){
     .logo{
+        position: fixed;
         font-size: 30px;
     }
 
@@ -617,14 +605,39 @@ footer{
         font-weight: bold;
     }
 
-    .image-section{
-        margin: 50px;
-    }
-
     .cards{
-        margin-bottom: 0px;
+        margin-bottom: -50px;
+        width: 100%;
     }
 
+    .image-section{
+        margin: 40px;
+        height: 260px;
+    }
+    
+    .content{
+        padding: 5px 15px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    
+    .content h2{
+        font-size: 25px;
+    }
+    
+    .content p{
+        margin: 15px 0px;
+        font-size: 20px;
+    }
+    
+    .content .button{
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 15px 20px;
+    }
+
+
+    /* Gallery */
     .wrapper .gallery{
         display: flex;
     }
@@ -648,9 +661,9 @@ footer{
 
     
 }
-
-@media (max-width: 600px){
+@media (max-width: 800px){
     .logo{
+        position: fixed;
         font-size: 30px;
     }
 
@@ -665,19 +678,274 @@ footer{
         font-weight: bold;
     }
 
-    .image-section{
-        margin: 50px;
+    .container{
+        width: 90%;
+        margin: 50px 15px;
+        grid-gap: 10px;
+    }
+    .cards{
+        margin-bottom:40px;
+        margin-left: 50px;
+        width: 80%;
     }
 
-    .cards{
-        margin-bottom: 0px;
+    .image-section{
+        margin: 40px;
+        height: 260px;
+    }
+    
+    .content{
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    
+    .content h2{
+        font-size: 20px;
+    }
+    
+    .content p{
+        margin: 15px 0px;
+        font-size: 17px;
+    }
+    
+    .content .button{
+        font-size: 17px;
+        margin-top: 15px;
+        padding: 10px 15px;
+    }
+
+        /* Gallery */
+    .wrapper .gallery{
+        display: inline-block;
     }
 
     .gallery .image{
-        padding: 4px;
+        width: calc(100% / 2);
+    }
+
+    .gallery .image h2{
+        font-size: 17px;
+        margin-left: 100px;
+    }
+
+    .gallery .image img{
+        width: 100%;
+        height: 470px;
+        margin-left: 60px;
+    }
+
+    /* preview box */
+    .preview-box{
+        position: fixed;
+        max-width: 400px;
+        height: 600px;
         width: 100%;
     }
+    
+    .preview-box .img-box{
+        display: flex;
+        max-width: 350px;
+        width: 100%;
+        height: 550px;
+        margin-left: 24px;
+    
+    }
+
+    /* design posts */
+
+    #d-container .post h1{
+        font-size: 25px;
+    }
+    
+    #d-container .post h2{
+        font-size: 18px;
+        text-decoration-line: underline;
+        text-underline-offset: 3px
+    }
+    
+    #d-container .post h3{
+        font-size: 15px;
+    }
+    
+    #d-container .post p{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    
+    #d-container .dpost{
+        width: 70%;
+        padding:0px 20px;
+        margin: 0px auto;
+
+    }
+
+    .imgmain{
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        
+    }
+    
+    .imgmain2{
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+        margin-left: 25px;
+    }
+    
 }
+@media (max-width: 400px){
+    .logo{
+        position: fixed;
+        font-size: 20px;
+    }
+
+    #logo{
+        position: fixed;
+        width: 60px;
+        height: 40px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .container{
+        width: 100%;
+        margin: 50px ;
+    }
+    .cards{
+        margin-bottom:40px;
+        margin-left: 5px;
+        width: 80%;
+    }
+
+    .image-section{
+        margin: 30px;
+        height: 250px;
+    }
+    
+    .content{
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    
+    .content h2{
+        font-size: 17px;
+    }
+    
+    .content p{
+        margin: 15px 0px;
+        font-size: 15px;
+    }
+    
+    .content .button{
+        font-size: 15px;
+        margin-top: 15px;
+        padding: 10px 13px;
+    }
+
+
+    /* Gallery */
+    .wrapper .gallery{
+        display: inline-block;
+    }
+
+    .gallery .image{
+        width: calc(100% / 2);
+    }
+
+    .gallery .image h2{
+        font-size: 13px;
+    }
+
+    .gallery .image img{
+        width: 100%;
+        height: 200px;
+    }
+
+    /* preview box */
+    .preview-box{
+        position: fixed;
+        max-width: 400px;
+        height: 500px;
+        width: 100%;
+    }
+    
+    .preview-box .img-box{
+        display: flex;
+        max-width: 260px;
+        width: 100%;
+        height: 450px;
+        margin-left: 24px;
+    
+    }
+
+    /* design posts */
+    #d-container{
+        background-image: url('./images/Postback.jpg');
+        background-repeat: repeat;
+        background-size: contain;
+        width: 100%;
+    }
+
+    #d-container .post h1{
+        font-size: 20px;
+    }
+    
+    #d-container .post h2{
+        font-size: 15px;
+        text-decoration-line: underline;
+        text-underline-offset: 3px
+    }
+    
+    #d-container .post h3{
+        font-size: 14px;
+    }
+    
+    #d-container .post p{
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    
+    #d-container .dpost{
+        width: 70%;
+        padding:0px 20px;
+        margin: 0px auto;
+
+    }
+
+    .imgmain{
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
+    }
+    
+    .imgmain2{
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+    }
+
+    .checkbtn{
+        margin-right: 40px;
+    }
+
+    .back-btn{
+        font-size: 15px;
+        padding: 7px 16px;
+        margin-left: 110px;
+    }
+
+    .back-btn2{
+        font-size: 15px;
+        padding: 7px 16px;
+    }
+}
+
 
 @media (max-width: 850px){
     .checkbtn{
@@ -687,6 +955,36 @@ footer{
         position: fixed;
         width: 100%;
         height: 100vh;
+        background-color: white;
+        top: 60px;
+        left: -120%;
+        text-align: center;
+        transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        padding: 30px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(198, 0, 248);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media (max-width: 400px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 150vh;
         background-color: white;
         top: 60px;
         left: -120%;
