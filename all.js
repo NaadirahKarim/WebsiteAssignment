@@ -16,7 +16,7 @@ hiddenElements.forEach((element) => observer.observe (element));
 // DOM for navigations header
 // header element
 const header = document.createElement('header');
-header.style.marginTop = '-20px';
+// header.style.marginTop = '-20px';
 // nav element
 const nav = document.createElement('nav');
 
