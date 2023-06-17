@@ -226,13 +226,6 @@ a.active,a:hover{
     }
 }
 
-/* Blog Cards for blog page (overview) */ 
-
-#blogcontainer{
-    padding: 5px;
-    justify-content: center;
-    align-self: center;
-}
 
 /* Appearance */
 .hidden{
@@ -248,8 +241,14 @@ a.active,a:hover{
     transform: translateX(0);
 }
 
-
 /* Blog Overview Page Cards */
+#blogcontainer{
+    padding: 5px;
+    justify-content: center;
+    align-self: center;
+}
+
+
 #blogcontainer .container{
     margin-bottom: -50px;
 }
