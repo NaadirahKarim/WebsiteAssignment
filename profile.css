@@ -34,6 +34,22 @@ body{
     font-size: 22px;
 } 
 
+/* Return to blog overview page button */
+.return{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    color: rgb(188, 193, 255);
+    bottom: 40px;
+    left: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    background-color:rgb(72, 72, 72);
+    font-size: 22px;
+} 
+
 h1{
     font-size: 2em;
     font-family: 'Dancing Script', cursive;
@@ -291,8 +307,8 @@ a.active,a:hover{
 
 #gamecontainer p{
     font-size: 18px;
-    text-align: start;
-    padding: 10px 50px 10px 50px;
+    text-align: center;
+    padding: 10px 100px 10px 100px;
 }
 
 #gamecontainer .game .imgmain{
@@ -305,7 +321,7 @@ a.active,a:hover{
 
 #gamecontainer .back-btn2{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     border: 0.1rem solid black;
     background: rgb(112, 112, 113);
@@ -313,19 +329,19 @@ a.active,a:hover{
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
-    padding: 7px 17px;
+    padding: 7px 25px;
     margin-bottom: 30px;
     margin-left: 30px;
 }
 
-.back-btn2:hover{
+#gamecontainer .back-btn2:hover{
     background-color: rgb(188, 193, 255);
     color: rgb(0, 0, 0);
 } 
 
 .back-btn2{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     border: 0.1rem solid black;
     background: rgb(112, 112, 113);
@@ -333,7 +349,7 @@ a.active,a:hover{
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
-    padding: 7px 17px;
+    padding: 7px 25px;
     margin-bottom: 30px;
     margin-left: 30px;
 }
