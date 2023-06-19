@@ -1,17 +1,26 @@
+// Toggle Burger Button
+// $(document).ready(function() {
+//   $('checkbtn').click(function() {
+//   $('ul').toggleClass('show');
+// });  
+// });
+
+
 //Appearacnce Animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
         if(entry.isIntersecting){
-            entry.target.classList.add("show");
+            entry.target.classList.add("visible");
         }else{
-            entry.target.classList.remove("show");
+            entry.target.classList.remove("visible");
         }
     });
 });
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((element) => observer.observe (element));
+
 
 // DOM for navigations header
 

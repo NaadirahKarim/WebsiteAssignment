@@ -8,7 +8,6 @@ html{
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
 }
     
 body{
@@ -94,7 +93,7 @@ a.active,a:hover{
 }
 
 /* For the Burger Button */
-.checkbtn{
+nav .checkbtn{
     font-size: 30px;
     color: black;
     float: right;
@@ -107,6 +106,20 @@ a.active,a:hover{
 #check{
     display: none;
 }
+
+/* Appearance */
+/* .hidden{
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+}
+
+.visible{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0%);
+} */
 
 /* Text for homepage */
 .profileimg img{
@@ -220,19 +233,6 @@ footer{
         margin: 20px auto 30px;
     }
 
-    /* Appearance */
-    .hidden{
-        opacity: 0;
-        filter: blur(5px);
-        transform: translateX(-100%);
-        transition: all 1s;
-    }
-
-    .show{
-        opacity: 1;
-        filter: blur(0);
-        transform: translateX(0);
-    }
     
     .content{
         padding: 200px 10px;
@@ -339,6 +339,7 @@ footer{
     .container{
         width: 100%;
         margin: 20px auto 30px;
+
     }
     
     .content{
@@ -364,7 +365,7 @@ footer{
 
 /* slider bar */
 @media (max-width: 850px){
-    .checkbtn{
+    nav .checkbtn{
         display: block;
     }
 
@@ -374,7 +375,7 @@ footer{
         height: 100vh;
         background-color: white;
         top: 60px;
-        left: -120%;
+        left: -100%;
         text-align: center;
         transition: all.5s;
     }
@@ -391,6 +392,10 @@ footer{
         background: none;
         color: rgb(198, 0, 248);
     }
+
+    /* nav ul.show{
+        left: 0;
+    } */
     #check:checked ~ ul{
         left: 0;
     }
