@@ -149,7 +149,7 @@ a.active,a:hover{
     max-width: 1504px;
     max-height: 200px;
     padding: 20px;
-    background-color: #dbf4ff21;
+    background-color: #ffffffe9;
     box-shadow: 0 22.4px 128px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
@@ -215,48 +215,6 @@ a.active,a:hover{
     color: rgb(138, 138, 138);
     border: 0.1rem solid black;
 } 
-
-
-/* essay section with back and next button */
-/* #essaycontainer{
-    background-image: url('./images/Postback.jpg');
-    background-size: 100% 100%;
-    width: 100%;
-
-}
-
-#blog-container .post h1{
-    font-family:"Times New Roman", Times, serif;
-    font-size: 25px;
-    text-align: center;
-    text-decoration-line: underline;
-    text-underline-offset: 6px;
-    margin-top: 60px;
-}
-
-#blog-container .post h2{
-    font-size: 20px;
-    text-decoration-line: underline;
-    text-underline-offset: 4px
-}
-
-#blog-container .post h3{
-    font-size: 18px;
-    margin: 5px;
-}
-
-
-#blog-container .post p{
-    font-size: 18px;
-    text-align: justify;
-    padding-bottom: 30px;
-    margin: 5px;
-}
-
-#blog-container .blogpost{
-    width: 60%;
-    margin: 0px auto;
-} */
 
 /* Essay Placeholder */
 #essay{

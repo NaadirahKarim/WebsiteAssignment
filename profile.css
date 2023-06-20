@@ -176,7 +176,7 @@ a.active,a:hover{
     text-align: left;
 }
 
-/* API- Motivational Quotes */
+/* API- Motivational Quotes */ /*use for media queries*/
 .APIcontainer{
     width: 100%;
     margin: 50px auto;
@@ -218,7 +218,7 @@ a.active,a:hover{
 .container{
     width: 75%;
     padding: 10px 10px;
-    margin: 190px auto;
+    margin: 190px auto 0px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;

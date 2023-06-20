@@ -178,6 +178,8 @@ nav .checkbtn{
 /* footer design */
 footer{
     background-color: rgb(255, 255, 255);
+    margin: -30px auto -5px; /*use for media queries*/
+
 }
 
 .footerbottom{
