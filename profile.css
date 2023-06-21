@@ -406,6 +406,7 @@ footer{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
+    
 }
 
 .footerbottom p{
@@ -419,6 +420,7 @@ footer{
 }
 
 /* For sizing down the screen- media queries */
+/* Desktop */
 @media (max-width: 1500px){
     .logo{
         font-size: 30px;
@@ -530,7 +532,7 @@ footer{
         margin-left: 450px;
     } 
 }
-
+/* Tablet */
 @media (max-width: 800px){
     .logo{
         font-size: 30px;
@@ -652,7 +654,7 @@ footer{
         margin-left: 200px;
     } 
 }
-
+/* Mobile phone */
 @media (max-width: 400px){
     .logo{
         position:fixed;

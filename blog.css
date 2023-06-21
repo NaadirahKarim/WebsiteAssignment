@@ -358,6 +358,7 @@ footer{
 }
 
 /* For sizing down the screen- media queries */
+/* Desktop */
 @media (max-width: 1500px){
     .logo{
         font-size: 30px;
@@ -432,6 +433,7 @@ footer{
     }
 
 }
+/* Tablet */
 @media (max-width: 800px){
     .logo{
         font-size: 30px;
@@ -484,7 +486,7 @@ footer{
         margin-right: 40px;
     }
 }
-
+/* Mobile Phone */
 @media (max-width: 400px){
     .logo{
         position: fixed;
