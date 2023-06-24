@@ -176,7 +176,7 @@ a.active,a:hover{
     text-align: left;
 }
 
-/* API- Motivational Quotes */ /*use for media queries*/
+/* API- Motivational Quotes */ 
 .APIcontainer{
     width: 100%;
     margin: 50px auto;
@@ -406,7 +406,7 @@ footer{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
-    
+
 }
 
 .footerbottom p{
@@ -440,8 +440,8 @@ footer{
     /* portfolio profile page */
     .pcontainer{
         width: 80%;
-        margin: 85px auto;
-        margin-bottom: 30px;
+        margin: 60px auto;
+        margin-bottom: 30px; 
     }
 
     .pcontent{
@@ -470,11 +470,31 @@ footer{
         height: 340px;
     }
 
-    /* art and games cards */
-    .container{
-        width: 60%;
+    /* API- Motivational Quotes */ 
+    .APIcontainer{
+        margin: 50px 20px auto -9px;
+        margin-bottom: 20px;
     }
 
+    .APIcontainer .btn{
+        margin-top: 10px;
+        margin-left: 425px;
+    }
+    
+    .APIcontainer .result {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* art, games and 3D model cards */
+    .container{
+        width: 75%;
+        padding: 10px 10px;
+        margin: 190px auto 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-gap: 50px;
+    }
     .content p{
         margin: 15px 0px;
         font-size: 20px;
@@ -531,6 +551,37 @@ footer{
         display: block;
         margin-left: 450px;
     } 
+
+    /* from here */
+    #gamecontainer .back-btn2{
+        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+
+    .back-btn2{
+        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+
+    /* footer */
+    footer{
+        margin: -50px auto -50px;
+    }
+    
+    .footerbottom{
+        padding: 20px;
+        margin-left: 100px;
+        text-align: center;
+        width: 90%; 
+    }
+    
+    .footerbottom p{
+      font-size: 20px;
+    }
+    
+    .designer{
+        font-size: 20px;
+    }    
 }
 /* Tablet */
 @media (max-width: 800px){
@@ -552,7 +603,7 @@ footer{
      /* portfolio profile page */
     .pcontainer{
         width: 80%;
-        margin: 85px auto;
+        margin: 50px auto;
         display: block;
         margin-bottom: 30px;
     }
@@ -582,7 +633,23 @@ footer{
         height: 320px;
     }
 
-    /* art and games cards */
+    /* API- Motivational Quotes */ 
+    .APIcontainer{
+        margin: 50px 20px auto -9px;
+        margin-bottom: 20px;
+    }
+
+    .APIcontainer .btn{
+        margin-top: 10px;
+        margin-left: 210px;
+    }
+    
+    .APIcontainer .result {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    /* art, games and 3D model cards */
     .card .content{
         display: flex;
         align-items: center;
@@ -653,8 +720,39 @@ footer{
         display: block;
         margin-left: 200px;
     } 
+
+    #gamecontainer .back-btn2{
+        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+
+    .back-btn2{
+        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+
+    /* footer */
+    footer{
+        margin: -50px auto -50px;
+    }
+    
+    .footerbottom{
+        padding: 20px;
+        margin-left: 30px;
+        text-align: center;
+        width: 90%; 
+    }
+    
+    .footerbottom p{
+      font-size: 15px;
+    }
+    
+    .designer{
+        font-size: 15px;
+    }   
+    
 }
-/* Mobile phone */
+/* Mobile Phone- M*/
 @media (max-width: 400px){
     .logo{
         position:fixed;
@@ -675,8 +773,8 @@ footer{
      /* portfolio profile page */
     .pcontainer{
         width: 100%;
-        margin: 80px auto 0px;
-        display: inline-block;
+        margin: 50px auto 0px;
+        display: block;
         margin-bottom: 30px;
     }
 
@@ -703,6 +801,23 @@ footer{
 
     .pcards{
         height: 410px;
+    }
+
+    /* API- Motivational Quotes */ 
+    .APIcontainer{
+        margin: 50px 20px auto -9px;
+        margin-bottom: 20px;
+    }
+
+    .APIcontainer .btn{
+        margin-top: 10px;
+        font-size: 10px;
+        margin-left: 45px;
+    }
+    
+    .APIcontainer .result {
+        font-size: 13px;
+        text-align: center;
     }
 
     /* art and games cards */
@@ -787,6 +902,35 @@ footer{
         height: 150px;
         display: block;
         margin-left: 35px;
+    } 
+    #gamecontainer .back-btn2{
+        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+
+    .back-btn2{
+        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+
+    /* footer */
+    footer{
+        margin: -50px auto -50px;
+    }
+    
+    .footerbottom{
+        padding: 20px;
+        margin-left: 0px;
+        text-align: center;
+        width: 100%; 
+    }
+    
+    .footerbottom p{
+      font-size: 14px;
+    }
+    
+    .designer{
+        font-size: 14px;
     } 
 }
 

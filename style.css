@@ -163,7 +163,7 @@ nav .checkbtn{
 /* footer design */
 footer{
     background-color: rgb(255, 255, 255);
-    margin: -15px auto -5px; /*use for media queries*/
+    margin: -15px auto -5px;
 
 }
 
@@ -171,7 +171,7 @@ footer{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
-    width: 90%; /*use for media queries*/
+    width: 90%;
 }
 
 .footerbottom p{
@@ -241,6 +241,25 @@ footer{
         font-size: 15px;
         padding: 10px 20px;
     }
+
+    /* footer */
+    footer{
+        margin: -100px auto -80px;
+    }
+    
+    .footerbottom{
+        padding: 20px;
+        text-align: center;
+        width: 90%; 
+    }
+    
+    .footerbottom p{
+      font-size: 20px;
+    }
+    
+    .designer{
+        font-size: 20px;
+    }
 }
 /* Tablet */
 @media (max-width: 800px){
@@ -292,8 +311,28 @@ footer{
         font-size: 1em;
         margin: 20px 0px;
     }
+
+    /* footer */
+    footer{
+        margin: -5px auto -5px;
+    }
+
+    .footerbottom{
+        padding: 15px;
+        margin-left: 60px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .footerbottom p{
+        font-size: 15px;
+    }
+
+    .designer{
+        font-size: 15px;
+    }    
 }
-/* Mobile phone */
+/* Mobile Phone- M*/
 @media (max-width: 400px){
 
     .logo{
@@ -348,6 +387,26 @@ footer{
     .content .About-btn{
         font-size: 12px;
         padding: 10px 15px;
+    }
+
+    /* footer */
+    footer{
+        margin: -5px auto -5px;
+    }
+
+    .footerbottom{
+        padding: 15px;
+        margin-left: 25px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .footerbottom p{
+        font-size: 14px;
+    }
+
+    .designer{
+        font-size: 14px;
     }
 }
 

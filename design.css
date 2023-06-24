@@ -134,20 +134,6 @@ a.active,a:hover{
     display: none;
 }
 
-/* Appearnace */
-.hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
 /* Design Overview Page Cards */
 .container{
     width: 90%;
@@ -165,7 +151,7 @@ a.active,a:hover{
     margin-bottom: -60px;
 }
 
-.image-section{
+.imagesection{
     margin: 40px;
     height: 230px;
     background-color: grey;
@@ -214,14 +200,14 @@ a.active,a:hover{
 }  
 
 /* design post section with back and next button */
-#d-container{
+#designcontainer{
     background-image: url('./images/Postback.jpg');
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
 }
 
-#d-container .post h1{
+#designcontainer .post h1{
     font-family:"Times New Roman", Times, serif;
     font-size: 25px;
     text-align: center;
@@ -230,23 +216,23 @@ a.active,a:hover{
     margin-top: 60px;
 }
 
-#d-container .post h2{
+#designcontainer .post h2{
     font-size: 20px;
     text-decoration-line: underline;
     text-underline-offset: 3px
 }
 
-#d-container .post h3{
+#designcontainer .post h3{
     font-size: 17px;
 }
 
-#d-container .post p{
+#designcontainer .post p{
     font-size: 18px;
     text-align: justify;
     padding-bottom: 30px;
 }
 
-#d-container .dpost{
+#designcontainer .designpost{
     width: 55%;
     margin: 0px auto;
 }
@@ -353,7 +339,7 @@ a.active,a:hover{
 
 .gallery .image img{
     width: 100%;
-    height: 300px;
+    height: 280px;
     vertical-align: middle;
     transition: all 0.3s ease;
     border: 1px solid black;
@@ -513,6 +499,12 @@ footer{
         font-weight: bold;
     }
 
+    .container{
+        width: 90%;
+        margin: 40px 30px auto 70px; 
+        grid-gap: 40px;
+    }
+
     .cards{
         margin-bottom: -50px;
         width: 100%;
@@ -552,22 +544,50 @@ footer{
 
     .gallery .image{
         width: calc(100% / 3);
-        /* margin-right: 100px; */
     }
 
     .gallery .image img{
         width: 100%;
-        height: 300px;
+        height: 400px;
     
     }
 
+    /* preview box */
     .preview-box{
         position: fixed;
-        max-width: 100px;
-        width: 100%; 
+        max-width: 550px;
+        height: 710px;
+        width: 100%;
+    }
+    
+    .preview-box .img-box{
+        display: flex;
+        max-width: 490px;
+        width: 100%;
+        height: 640px;
+        margin-left: 24px;
     }
 
+    /* footer */
+    footer{
+        margin: 90px auto 0px;
+    }
     
+    .footerbottom{
+        padding: 25px;
+        text-align: center;
+        margin-left: 30px;
+        width: 90%; 
+    }
+    
+    .footerbottom p{
+      font-size: 20px;
+    }
+    
+    .designer{
+        font-size: 20px;
+    }
+
 }
 /* Tablet */
 @media (max-width: 800px){
@@ -589,7 +609,7 @@ footer{
 
     .container{
         width: 90%;
-        margin: 50px 15px;
+        margin: 50px 20px;
         grid-gap: 10px;
     }
     .cards{
@@ -624,7 +644,7 @@ footer{
         padding: 10px 15px;
     }
 
-        /* Gallery */
+    /* Gallery */
     .wrapper .gallery{
         display: inline-block;
     }
@@ -647,14 +667,14 @@ footer{
     /* preview box */
     .preview-box{
         position: fixed;
-        max-width: 400px;
-        height: 600px;
+        max-width: 410px;
+        height: 610px;
         width: 100%;
     }
     
     .preview-box .img-box{
         display: flex;
-        max-width: 350px;
+        max-width: 355px;
         width: 100%;
         height: 550px;
         margin-left: 24px;
@@ -662,27 +682,26 @@ footer{
     }
 
     /* design posts */
-
-    #d-container .post h1{
+    #designcontainer .post h1{
         font-size: 25px;
     }
     
-    #d-container .post h2{
+    #designcontainer .post h2{
         font-size: 18px;
         text-decoration-line: underline;
         text-underline-offset: 3px
     }
     
-    #d-container .post h3{
+    #designcontainer .post h3{
         font-size: 15px;
     }
     
-    #d-container .post p{
+    #designcontainer .post p{
         font-size: 15px;
         padding-bottom: 30px;
     }
     
-    #d-container .dpost{
+    #designcontainer .designpost{
         width: 70%;
         padding:0px 20px;
         margin: 0px auto;
@@ -698,13 +717,33 @@ footer{
     
     .imgmain2{
         width: 100%;
-        max-width: 200px;
+        max-width: 230px;
         height: 300px;
         margin-left: 25px;
     }
+
+    /* footer */
+    footer{
+        margin: -50px auto 0px;
+    }
+    
+    .footerbottom{
+        padding: 20px;
+        text-align: center;
+        margin-left: 30px;
+        width: 90%; 
+    }
+    
+    .footerbottom p{
+      font-size: 15px;
+    }
+    
+    .designer{
+        font-size: 15px;
+    }
     
 }
-/* mobile phone */
+/* Mobile Phone- M*/
 @media (max-width: 400px){
     .logo{
         position: fixed;
@@ -723,8 +762,8 @@ footer{
     }
 
     .container{
-        width: 100%;
-        margin: 50px ;
+        width: 85%;
+        margin: 40px 55px;
     }
     .cards{
         margin-bottom:40px;
@@ -765,63 +804,63 @@ footer{
     }
 
     .gallery .image{
-        width: calc(100% / 2);
+        width: calc(90% / 1);
+        margin-left: -10px;
     }
 
     .gallery .image h2{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .gallery .image img{
-        width: 100%;
-        height: 200px;
+        width: 80%;
+        height: 270px;
     }
 
     /* preview box */
     .preview-box{
         position: fixed;
         max-width: 400px;
-        height: 500px;
+        height: 530px;
         width: 100%;
     }
     
     .preview-box .img-box{
         display: flex;
-        max-width: 260px;
+        max-width: 325px;
         width: 100%;
-        height: 450px;
-        margin-left: 24px;
-    
+        height: 470px;
+        margin-left: 20px;
     }
 
     /* design posts */
-    #d-container{
+    #designcontainer{
         background-image: url('./images/Postback.jpg');
         background-repeat: repeat;
         background-size: contain;
         width: 100%;
     }
 
-    #d-container .post h1{
+    #designcontainer .post h1{
         font-size: 20px;
     }
     
-    #d-container .post h2{
+    #designcontainer .post h2{
         font-size: 15px;
         text-decoration-line: underline;
         text-underline-offset: 3px
     }
     
-    #d-container .post h3{
+    #designcontainer .post h3{
         font-size: 14px;
     }
     
-    #d-container .post p{
+    #designcontainer .post p{
         font-size: 14px;
         padding-bottom: 30px;
     }
     
-    #d-container .dpost{
+    #designcontainer .designpost{
         width: 70%;
         padding:0px 20px;
         margin: 0px auto;
@@ -830,14 +869,15 @@ footer{
 
     .imgmain{
         width: 100%;
-        max-width: 200px;
+        max-width: 300px;
         height: 200px;
     }
     
     .imgmain2{
         width: 100%;
-        max-width: 200px;
+        max-width: 250px;
         height: 300px;
+        margin-left: -10px;
     }
 
     .checkbtn{
@@ -853,6 +893,26 @@ footer{
     .back-btn2{
         font-size: 15px;
         padding: 7px 16px;
+    }
+
+    /* footer */
+    footer{
+        margin: -50px auto 0px;
+    }
+    
+    .footerbottom{
+        padding: 20px;
+        text-align: center;
+        margin-left: 30px;
+        width: 90%; 
+    }
+    
+    .footerbottom p{
+      font-size: 14px;
+    }
+    
+    .designer{
+        font-size: 14px;
     }
 }
 

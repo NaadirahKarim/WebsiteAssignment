@@ -216,10 +216,11 @@ a.active,a:hover{
     border: 0.1rem solid black;
 } 
 
-/* Essay Placeholder */
+/* Essay  */
 #essay{
-    padding: 10px;
-    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    display: block;
 }
 
 #essay article{
@@ -227,12 +228,11 @@ a.active,a:hover{
 }
 
 #essay .essayblock{
-    width: 100%;
-    margin: 20px auto 0px auto;
+    margin-top: 20px;
+    margin-left: 20px ;
     background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     border: 0.1rem solid black;
-    display: inline-block;
 }
 
 #essay .essaycon{
@@ -305,7 +305,7 @@ footer{
     background-color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
-    
+
 }
 
 .footerbottom p{
@@ -322,6 +322,7 @@ footer{
 /* Desktop */
 @media (max-width: 1500px){
     .logo{
+        position: fixed;
         font-size: 30px;
     }
 
@@ -334,6 +335,44 @@ footer{
     nav ul li a{
         font-size: 20px;
         font-weight: bold;
+    }
+
+    /* Essay overview page */
+    #essaycontainer .essaypost{
+        width: 100%;
+        max-width: 1350px;
+        max-height: 300px;
+        margin: 30px 37px;
+    }
+
+    #essaycontainer .essaypost .essaybtn{
+        padding: 12px 10px;
+        font-size: 17px;
+    }
+
+    #essaycontainer .essayimg img {
+        width: 100%;
+        height: 100%;
+        margin: -15px -5px;
+    }
+    
+    #essaycontainer .essaypost .essaydate span {
+        font-size: 20px;
+        margin: 30px 8px 8px;
+    }
+    
+    #essaycontainer .essayinfo  h2{
+        font-size: 23px
+    }
+    
+    #essaycontainer .essayinfo p{
+        font-size: 20px;
+    }
+
+    /* Essay Post */
+    #essay{
+        width: 100%;
+        max-width: 1420px;
     }
 
     #essay .essaycon h2{
@@ -359,10 +398,31 @@ footer{
         height: 400px;
         padding: 10px;
     }
+
+    /* footer */
+    footer{
+        margin: 50px auto 0px;
+    }
+    
+    .footerbottom{
+        padding: 25px;
+        text-align: center;
+        margin-left: 30px;
+        width: 90%; 
+    }
+    
+    .footerbottom p{
+      font-size: 20px;
+    }
+    
+    .designer{
+        font-size: 20px;
+    }
 }
 /* Tablet */
 @media (max-width: 800px){
     .logo{
+        position: fixed;
         font-size: 30px;
     }
 
@@ -377,6 +437,44 @@ footer{
         font-weight: bold;
     }
 
+    /* Essay overview page */
+    #essaycontainer .essaypost{
+        width: 100%;
+        max-width: 700px;
+        max-height: 270px;
+        margin: 30px 26px;
+    }
+
+    #essaycontainer .essaypost .essaybtn{
+        padding: 8px 9px;
+        font-size: 14px;
+    }
+
+    #essaycontainer .essayimg img {
+        width: 90%;
+        height: 90%;
+        margin: -15px -5px;
+    }
+    
+    #essaycontainer .essaypost .essaydate span {
+        font-size: 14px;
+        margin: 30px 8px 8px;
+    }
+    
+    #essaycontainer .essayinfo  h2{
+        font-size: 16px
+    }
+    
+    #essaycontainer .essayinfo p{
+        font-size: 14px;
+    }
+
+    /* Essay Post */
+    #essay{
+        width: 100%;
+        max-width: 746px;
+    }
+    
     #essay .essaycon h2{
         font-size: 18px;
         margin: 15px;
@@ -399,11 +497,32 @@ footer{
         height: 250px;
         padding: 10px;
     }
+
+    /* footer */
+    footer{
+        margin: 40px auto -20px;
+    }
+    
+    .footerbottom{
+        padding: 20px;
+        text-align: center;
+        margin-left: 30px;
+        width: 90%; 
+    }
+    
+    .footerbottom p{
+      font-size: 15px;
+    }
+    
+    .designer{
+        font-size: 15px;
+    }
 }
-/* Mobile Phone */
+/* Mobile Phone- M*/
 @media (max-width: 400px){
     .logo{
-        font-size: 30px;
+        position: fixed;
+        font-size: 20px;
     }
 
     #logo{
@@ -417,12 +536,48 @@ footer{
         font-weight: bold;
     }
 
-    h1{
-        margin-left: 270px;
+    /* Essay overview page */
+    #essaycontainer .essaypost{
+        width: 100%;
+        max-width: 345px;
+        max-height: 400px;
+        margin: 20px 10px;
     }
+
+    #essaycontainer .essaypost .essaybtn{
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    #essaycontainer .essaypost .essayimg {
+        min-width: 100px;
+        max-width: 200px;
+        height: 200px;
+    }
+
+    #essaycontainer .essayimg img {
+        width: 100%;
+        height: 50%;
+        margin: -15px -10px;
+    }
+    
+    #essaycontainer .essaypost .essaydate span {
+        font-size: 12px;
+        margin: 30px 0px 8px;
+    }
+    
+    #essaycontainer .essayinfo  h2{
+        font-size: 13px
+    }
+    
+    #essaycontainer .essayinfo p{
+        font-size: 12px;
+    }
+
+    /* Essay Post */
     #essay{
-        padding: 10px;
-        display: inline-block;
+        width: 100%;
+        max-width: 350px;
     }
 
     #essay .essaycon h2{
@@ -437,14 +592,35 @@ footer{
     
     #essay .essaycon p{
         font-size: 16px;
+        text-align: justify;
         margin: 10px;
     }
 
     #essay img{
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
         height: 250px;
         padding: 10px;
+    }
+
+    /* footer */
+    footer{
+        margin: 40px auto -20px;
+    }
+    
+    .footerbottom{
+        padding: 20px;
+        text-align: center;
+        margin-left: 0px;
+        width: 100%; 
+    }
+    
+    .footerbottom p{
+      font-size: 14px;
+    }
+    
+    .designer{
+        font-size: 14px;
     }
 
 }
@@ -465,7 +641,7 @@ footer{
     }
     nav ul li{
         display: block;
-        padding: 25px 0;
+        padding: 30px 0;
     }
     nav ul li a{
         font-size: 20px;
@@ -474,19 +650,20 @@ footer{
         background: none;
         color: rgb(198, 0, 248);
     }
+
     #check:checked ~ ul{
         left: 0;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 400px){
     .checkbtn{
         display: block;
     }
     nav ul{
         position: fixed;
         width: 100%;
-        height: 200vh;
+        height: 150vh;
         background-color: white;
         top: 60px;
         left: -120%;
@@ -495,8 +672,7 @@ footer{
     }
     nav ul li{
         display: block;
-        padding: 30px 0px;
-        margin-top: 60px;
+        padding: 30px 0;
     }
     nav ul li a{
         font-size: 20px;
