@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="Navtop">
         <!-- navigation menu webpages + burger button + logo + heading -->
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -29,36 +29,22 @@
         <img src="./images/Logo 2.png" id="logo" />
         <label class="logo">Naadirah Karim.</label>
 
-        <ul>
-            <li><a href="index.html" class= "active">Home</a></li>
-            <li><a href="./profile.html">My Portfolio</a></li>
-            <li><a href="./blog.html">Blogs</a></li>
-            <li><a href="./design.html">Design</a></li>
-            <li><a href="./essay.html">Essay</a></li>
+        <ul >
+            <li id="home"><a href="index.html" class= "active">Home</a></li>
+            <li id="profile"><a href="./profile.html">My Portfolio</a></li>
+            <li id="blog"><a href="./blog.html">Blogs</a></li>
+            <li id="design"><a href="./design.html">Design</a></li>
+            <li id="essay"><a href="./essay.html">Essay</a></li>
         </ul>
         </nav>  
     </header>
 
     <main>
-    <!-- scroll to top button -->
-        <!-- <a class="gotop" href="#"> <i class="fa-solid fa-arrow-up"></i> </a> -->
-
-
-        <!-- text and more about me button -->
-        <section class="p-card">
-            <section class="hidden">
-            <section class="container">
-                    <section class="content">
-                        <section class="profileimg">
-                       <p><img  src="./images/Profile.jpg" class="u-photo" alt="Profile Pic Icon"></p>     
-                        </section>
-                        <p class="p-name"><h1> Introducing Naadirah Karim... </h1></p> 
-                        <h2>A Digital Arts Engineering Student</h2>
-                        <a href="./profile.html" class="About-btn">MORE ABOUT ME</a>
-                    </section>
-                </section>                  
-            </section>
-        </section>        
+        <!-- JS Display -->
+        <section id="HomePage"></section>
+        
+        <section id="Navigation"></section>
+        
     </main>
     
     <script src="./Nav.js"></script>
