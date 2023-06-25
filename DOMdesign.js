@@ -8,6 +8,51 @@ design3.addEventListener("click", () => AccessDesign3());
 const design4 = document.querySelector("#design4");
 design4.addEventListener("click", () => AccessDesign4());
 
+let designPage = document.getElementById("DesignPage");
+let designPageInnerHTML =
+`<section class="p-card">
+<section class="container">
+    <section class="cards">
+        <section class="imagesection img"></section>
+        <section class="content">
+            <h2>Wireframes</h2>
+            <p>All my wireframe designs from the originals to the final designs</p>
+            <a href="./designpost1.html" class="button">CHECK OUT</a>
+        </section>
+    </section>
+
+    <section class="cards">
+        <section class="imagesection img"></section>
+        <section class="content">
+            <h2>IxD Process</h2>
+            <p>My notes, my planning and my design process journey of creating my website</p>
+            <a href="./designpost2.html" class="button">CHECK OUT</a>
+        </section>
+    </section>
+
+    <section class="cards">
+        <section class="imagesection img"></section>
+        <section class="content">
+            <h2>Style Guide</h2>
+            <p>My goal, aesthetics, visual design elements and final designs of my website</p>
+            <a href="./designpost3.html" class="button">CHECK OUT</a>
+        </section>
+    </section>
+
+    <section class="cards">
+        <section class="imagesection img"></section>
+        <section class="content">
+            <h2>Implimentation Notes</h2>
+            <p>A brief description on how UI and UX impacted my HTML and CSS codes and a reflection of changes made from Assignment 1</p>
+            <a href="./designpost4.html" class="button">CHECK OUT</a>
+        </section>
+    </section>
+</section>                       
+</section>`;
+
+designPage.innerHTML = designPageInnerHTML;
+
+
 function AccessDesign1(){
     window.location.replace("https://naadirahkarim.github.io/WebsiteAssignment/designpost1.html");
 }
@@ -20,6 +65,8 @@ function AccessDesign3(){
 function AccessDesign4(){
     window.location.replace("https://naadirahkarim.github.io/WebsiteAssignment/designpost1.html");
 }
+
+
 
 //Gallery for Design Section - Wireframes
 const gallery = document.querySelectorAll(".gallery .image"),
