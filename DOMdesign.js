@@ -1,12 +1,12 @@
-//DOM For Design Pages
+// //DOM For Design Pages
 const design1 = document.querySelector("#design1");
-design1.addEventListener("click", () => AccessDesign1());
+// design1.addEventListener("click", () => AccessDesign1());
 const design2 = document.querySelector("#design2");
-design2.addEventListener("click", () => AccessDesign2());
+// design2.addEventListener("click", () => AccessDesign2());
 const design3 = document.querySelector("#design3");
-design3.addEventListener("click", () => AccessDesign3());
+// design3.addEventListener("click", () => AccessDesign3());
 const design4 = document.querySelector("#design4");
-design4.addEventListener("click", () => AccessDesign4());
+// design4.addEventListener("click", () => AccessDesign4());
 
 let designPage = document.getElementById("DesignPage");
 let designPageInnerHTML =
@@ -50,7 +50,7 @@ let designPageInnerHTML =
 </section>                       
 </section>`;
 
-designPage.innerHTML = designPageInnerHTML;
+// designPage.innerHTML = designPageInnerHTML;
 
 
 function AccessDesign1(){
@@ -65,8 +65,6 @@ function AccessDesign3(){
 function AccessDesign4(){
     window.location.replace("https://naadirahkarim.github.io/WebsiteAssignment/designpost1.html");
 }
-
-
 
 //Gallery for Design Section - Wireframes
 const gallery = document.querySelectorAll(".gallery .image"),

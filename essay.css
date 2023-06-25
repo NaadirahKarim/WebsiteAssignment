@@ -124,7 +124,7 @@ a.active,a:hover{
     color: black;
     float: right;
     line-height: 60px;
-    margin-right: 80px;
+    margin-right: 50px;
     cursor: pointer;
     display: none;
 }
