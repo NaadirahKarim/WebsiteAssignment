@@ -1,3 +1,25 @@
+//DOM For Design Pages
+const design1 = document.querySelector("#design1");
+design1.addEventListener("click", () => AccessDesign1());
+const design2 = document.querySelector("#design2");
+design2.addEventListener("click", () => AccessDesign2());
+const design3 = document.querySelector("#design3");
+design3.addEventListener("click", () => AccessDesign3());
+const design4 = document.querySelector("#design4");
+design4.addEventListener("click", () => AccessDesign4());
+
+function AccessDesign1(){
+    window.location.replace("https://naadirahkarim.github.io/WebsiteAssignment/designpost1.html");
+}
+function AccessDesign2(){
+    window.location.replace("https://naadirahkarim.github.io/WebsiteAssignment/designpost1.html");
+}
+function AccessDesign3(){
+    window.location.replace("https://naadirahkarim.github.io/WebsiteAssignment/designpost1.html");
+}
+function AccessDesign4(){
+    window.location.replace("https://naadirahkarim.github.io/WebsiteAssignment/designpost1.html");
+}
 
 //Gallery for Design Section - Wireframes
 const gallery = document.querySelectorAll(".gallery .image"),

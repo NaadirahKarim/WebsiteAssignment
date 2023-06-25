@@ -89,6 +89,7 @@ nav{
     border-bottom: 1px solid rgb(164, 164, 164);
     position: fixed;
     margin-top: -60px;
+    opacity: 1;
 }
 
 nav ul{
@@ -123,7 +124,7 @@ a.active,a:hover{
     color: black;
     float: right;
     line-height: 60px;
-    margin-right: 40px;
+    margin-right: 80px;
     cursor: pointer;
     display: none;
 }
