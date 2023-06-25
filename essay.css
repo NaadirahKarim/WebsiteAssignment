@@ -260,6 +260,12 @@ a.active,a:hover{
     margin: 10px;
 }
 
+#essay .essaycon a{
+    font-size: 19px;
+    text-align:justify;
+    margin: 10px;
+}
+
 #essay .eimg{
     display: flex;
     justify-content: center;
@@ -392,6 +398,12 @@ footer{
         margin: 10px;
     }
 
+    #essay .essaycon a{
+        font-size: 23px;
+        text-align:justify;
+        margin: 10px;
+    }
+
     #essay img{
         width: 100%;
         max-width: 600px;
@@ -486,6 +498,12 @@ footer{
     }
     
     #essay .essaycon p{
+        font-size: 16px;
+        text-align:justify;
+        margin: 10px;
+    }
+
+    #essay .essaycon a{
         font-size: 16px;
         text-align:justify;
         margin: 10px;
@@ -587,12 +605,18 @@ footer{
     #essay .essaycon h3{
         margin: 5px;
         font-size: 16px;
-        margin-left: 150px;
+        margin-right: 0px;
     }
     
     #essay .essaycon p{
         font-size: 16px;
         text-align: justify;
+        margin: 10px;
+    }
+
+    #essay .essaycon a{
+        font-size: 16px;
+        text-align:justify;
         margin: 10px;
     }
 
